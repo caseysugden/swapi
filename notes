@@ -1,0 +1,20 @@
+APIs
+Part 1: SWAPI
+1. https://swapi.dev/api/people/4
+2. https://swapi.dev/api/planets/2
+3. https://swapi.dev/api/starships/10
+4. https://swapi.dev/api/people/2 https://swapi.dev/api/species/2
+5. https://swapi.dev/api/people/10
+6. https://swapi.dev/api/starships/?search=falcon
+
+Part 2: Social Mountain
+1. POST accepts body containing "text"
+2. GET returns an object that includes  properties id (num), text (string), and date (string), aka JSON
+3. DELETE /posts?id=555
+4. 200; 409
+5. POST /posts "Casey"
+6. PUT /posts?id=563 "Blue"
+7. GET /posts/filter?text=blue
+8. json; utf-8
+9. Failure to include a req.query.id or req.body.txt would result in a 409 status.
+10. Nothing happens, as there is no query functionality without the filter endpoint.
